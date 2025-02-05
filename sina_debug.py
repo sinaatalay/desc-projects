@@ -114,7 +114,6 @@ coilset = initialize_modular_coils(eq, num_coils=3, r_over_a=3.0).to_FourierXYZ(
 
 # visualize the initial coilset
 # we use a smaller than usual plot grid to reduce memory of the notebook file
-plot_grid = LinearGrid(M=20, N=40, NFP=1, endpoint=True)
-fig = plot_3d(eq, "|B|", grid=plot_grid)
+fig = plot_3d(eq, "|B|")
 fig = plot_coils(coilset, fig=fig)
 fig.show()
